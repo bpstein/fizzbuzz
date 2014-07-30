@@ -14,6 +14,11 @@ ul, li {
 
 ul {
 	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#counter {
+	margin-bottom: 30px;
 }
 
 #input-form, #counter {
@@ -22,14 +27,14 @@ ul {
 	margin-top: 40px;
 }
 
-header, #footer-panel {
+header {
 	background-color: #000;
 	height: 80px;
 	width: 100%;
 }
 
-footer, #footer-panel {
+#footer-panel {
 	bottom: 0;
-	margin-top: 340px;
-	position: fixed;
+	margin-top: 40px;
+	bottom: 0;
 }
