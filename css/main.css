@@ -31,4 +31,5 @@ header, #footer-panel {
 footer, #footer-panel {
 	bottom: 0;
 	margin-top: 340px;
+	position: fixed;
 }
