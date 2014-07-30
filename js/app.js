@@ -1,43 +1,21 @@
 $(document).ready(function(){
 
-	var i = 0; 
-	var fizz = i % 3;
-	var buzz = i % 5;
-	var fizzBuzz = i % 15;
+	var fizz = '<li>' + 'Fizz' + '</li>';
+	var buzz = '<li>' + 'Buzz' + '</li>';
+	var fizzBuzz = '<li>' + 'FizzBuzz' + '</li>';
+	var item = '<li>' + i + '</li>'; 
 
-	var loop = function(){
-    	while (i <= 100){ 
-    		var item = '<li>' + i + '</li>';            
-        	$('ul').append(item); 
-        	i++;
 
-    	}
-	};
-
-	loop();
-
+	for (var i=1; i <= 100; i++) {
+	    if (i % 15 == 0)
+			$('ul').append(fizzBuzz);
+		else if (i % 5 == 0)
+	        $('ul').append(buzz);
+	    else if (i % 3 == 0)
+			$('ul').append(fizz);    
+		else
+	        $('ul').append('<li>' + i + '</li>');
+	           
+	}	
 });
 
-
-
-if (fizz = 0) {
-    
-    console.log("Fizz")
-
-    }
-
-else if (buzz = 0) {
-    
-    console.log("Buzz")
-    
-    }
-
-else if (fizzBuzz = 0) {
-    
-    console.log("FizzBuzz")
-    
-    }
-
-else {
-	console.log("i")
-}
