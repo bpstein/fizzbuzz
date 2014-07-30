@@ -9,10 +9,13 @@ $(document).ready(function(){
 	for (var i=1; i <= 100; i++) {
 	    if (i % 15 == 0)
 			$('ul').append(fizzBuzz);
+
 		else if (i % 5 == 0)
 	        $('ul').append(buzz);
+
 	    else if (i % 3 == 0)
-			$('ul').append(fizz);    
+			$('ul').append(fizz);
+			    
 		else
 	        $('ul').append('<li>' + i + '</li>');
 	           
