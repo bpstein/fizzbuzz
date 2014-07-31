@@ -1,9 +1,5 @@
 $(document).ready(function(){
 
-	//Append user input to DOM
-	var addNumber = function(item){
-		$('ul').append( "<p>" + item + "</p>");
-	};
 	//Fizzbuzz function
 	var fizzBuzz = function(getNumber) {
 		if (getNumber >= 1 && getNumber <= 100) {
